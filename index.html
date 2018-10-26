@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <form class="login" method="POST" action="/cv">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="dui">DUI</label>
+            <input type="text" name="dui" id="dui" placeholder="048134128" maxlength="10" pattern="[0][0-9]{7}-{0-9}">
+            
+            <label for="name">Nombres:</label>
+            <input type="text" id="name" name="firstname" placeholder="Nombre" required>
+            
+            <!--last name-->
+            
+            <label for="lastName">Apellidos:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
+            
+            <!--gender-->
+            
+            <label for="gender">G&eacute;nero</label>
+            <label>
+                <input type="radio" name="gender" id="" value="Masculino">M</label>
+            <label>
+                <input type="radio" name="gender" id="" value="Femenino">F</label>
+            <br>
+            <br>
+
+            <!--last name-->
+            
+            <label for="tel">N&uacute;mero de Contacto:</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{4}-[0-9]{4}" maxlength="9" placeholder="2222-2222">
+            
+            <!--last name-->
+            
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" name="birth" required>
+            
+            <!--last name-->
+            
+            <label for="cs">Estado Civil</label>
+            <select name="civilStatus" id="cs">
+                <option value="Soltero">Soltero</option>
+                <option value="Casado">Casado</option>
+            </select>
+           
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Experiencia Laboral</legend>
+            <textarea name="exp" id="" cols="150" rows="10" placeholder="Experiencia" required></textarea>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Formaci&oacute;n Acad&eacute;mica</legend>
+            <textarea name="std" id="" cols="150" rows="10" placeholder="Estudios" required></textarea>
+        </fieldset>
+       
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

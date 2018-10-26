@@ -1,0 +1,36 @@
+:root{
+    font-size: 16px;
+    color: rgb(53, 52, 52);
+}
+
+body{
+    margin:1em 10%;
+}
+
+#name{
+    padding: 0.1em 2.5em;
+    background: #273c755b;
+    color: black;
+    border-left: 1em solid #273c75;
+    border-right: 1em solid #273c75;
+    text-align: center;
+    margin: 0 0 3em 0;
+}
+
+#main-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+#main-section>section{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+#main-section>section>p{
+    text-align: justify;
+    padding-bottom: 2em;
+    border-bottom: 0.1em solid rgba(128, 128, 128, 0.623);
+}
